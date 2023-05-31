@@ -65,6 +65,7 @@ a
 .float-link-top
 {
     position: fixed;
+    z-index: 97;
     right: 1rem;
     bottom: 1rem;
     display: flex;
@@ -88,6 +89,7 @@ a
 .widget
 {
     position: fixed;
+    z-index: 99;
     display: flex;
     align-items: center;
     justify-content: center;

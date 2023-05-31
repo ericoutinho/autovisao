@@ -16,6 +16,14 @@
         }
     }
 
+    @media (max-width: 768px)
+    {
+        h2 span
+        {
+            display: block;
+        }
+    }
+
     .testimonials-wrapper
     {
         margin: 0 auto;

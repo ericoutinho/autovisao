@@ -4,7 +4,7 @@
     // background-color: $primary-color;
     background: 
         linear-gradient(180deg, rgba(0, 32, 75, 0.6) 0%, rgb(0, 32, 75) 25%, #00204B 75%, rgba(0, 32, 75, 0.8)),
-        url(../assets/pixels_grayscale.jpg),
+        url(../assets/pixels_grayscale.webp),
         rgb(0, 32, 75);
     background-blend-mode: normal, overlay, normal;
     background-size: cover;
@@ -25,6 +25,19 @@
         }
     }
 
+    @media (max-width: 768px)
+    {
+        h2 span
+        {
+            display: block;
+        }
+
+        .course-wrapper div
+        {
+            text-align: center;
+        }
+    }
+
     p
     {
         font-weight: 200;
@@ -40,6 +53,7 @@
     {
         display: flex;
         align-items: flex-start;
+        flex-wrap: wrap;
         gap: 2rem;
         width: min(90%, 1000px);
         margin: 0 auto;
@@ -57,4 +71,5 @@
             border-radius: 30px 30px 4px 30px;
         }
     }
+
 }
