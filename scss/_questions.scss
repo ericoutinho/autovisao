@@ -1,0 +1,104 @@
+#questions
+{
+    padding-block: 0 2rem;
+
+    .questions-wrapper
+    {
+        background-color: $light-gray-color;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-inline: auto;
+        width: min(90%, 1000px);
+        color: $text-color;
+        margin-top: -3rem;
+
+        h2
+        {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+
+            &::after
+            {
+                content: '';
+                display: block;
+                height: 4px;
+                width: 100px;
+                background-color: $secondary-color;
+                margin: 1rem auto 0 auto;
+            }
+        }
+
+        ul
+        {
+            margin-bottom: 1rem;
+        }
+
+        li
+        {
+            padding: 1rem 0 1rem 1rem;
+            position: relative;
+
+            input[type=checkbox]
+            {
+                display: none;
+            }
+
+            label
+            {
+                display: block;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            label:hover
+            {
+                filter: brightness(1.2);
+            }
+
+            label::before
+            {
+                content: "\f0da";
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                color: $secondary-color;
+                margin-right: 1rem;
+            }
+
+            input[type=checkbox]:checked ~ label::before
+            {
+                content: "\f0d7";
+            }
+
+            div
+            {
+                background-color: #F3F3FF;
+                border-radius: 6px;
+                overflow: hidden;
+                display: block;
+                opacity:0;
+                height: 0;
+                transition: opacity 0.3s linear;
+            }
+
+            input[type=checkbox]:checked ~ div
+            {
+                padding: 1rem;
+                margin-top: .75rem;
+                opacity:1;
+                height: fit-content;
+            }
+            
+        }
+        
+        li:not(:last-child)
+        {
+            border-bottom: 1px solid #BBB;
+        }
+
+        p
+        {
+           text-align: center;
+        }
+    }
+}

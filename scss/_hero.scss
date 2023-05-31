@@ -1,0 +1,42 @@
+#hero
+{
+    // background: $primary-color;
+    background: 
+        linear-gradient(180deg, rgba(0, 32, 75, 0.6) 0%, rgb(0, 32, 75) 25%, #00204B 75%, rgba(0, 32, 75, 0.8)),
+        url(../assets/pixels_grayscale.jpg),
+        rgb(0, 32, 75);
+    background-blend-mode: normal, overlay, normal;
+    background-size: cover;
+    color: #fff;
+    padding-top: 2rem;
+
+    h2
+    {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-wrapper
+    {
+        display: flex;
+        margin: 0 auto;
+        width: min(90%, 1000px);
+        gap: 2rem;
+
+        .hero-text
+        {
+            align-self: center;
+
+            p
+            {
+                font-weight: 200;
+                line-height: 1.5;
+            }
+        }
+
+        .hero-text, .hero-figure
+        {
+            flex: 1 0 350px;
+        }
+    }
+}

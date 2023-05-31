@@ -1,0 +1,42 @@
+#partners
+{
+    background: #FFF;
+    padding-block: 6rem;
+
+    h2
+    {
+        font-size: 2rem;
+        text-align: center;
+        color: $text-color;
+        margin-bottom: 3rem;
+    }
+
+    .partners-wrapper
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        width: min(90%, 1000px);
+        margin: 0 auto;
+
+        a {
+            flex: 0 1 175px;
+            transition: all .3s;
+
+            &:hover
+            {
+                filter: brightness(1.2);
+                translate: 0 -5px;
+                transition: all .3s;
+
+            }
+
+            img {
+                max-height: 55px;
+                width: 100%;
+            }
+        }
+
+    }
+}

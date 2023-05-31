@@ -1,0 +1,109 @@
+header
+{
+    padding-top: .75rem;
+
+    .header
+    {
+        width: min(90%, 1000px);
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1.25rem;
+
+        img
+        {
+            flex: 0 0 90px;
+        }
+    }
+
+    .header-links
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+
+        li a
+        {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            &:hover i
+            {
+                translate: 0 -5px;
+                color: $secondary-color;
+                transition: all .3s;
+            }
+            
+            p
+            {
+                font-size: .8rem;
+            }
+
+            span
+            {
+                display: block;
+                font-size: 1rem;
+                font-family: "Barlow", sans-serif;
+                font-weight: 600;
+            }
+
+            i
+            {
+                font-size: 2rem;
+                transition: all .3s;
+            }
+        }
+
+    }
+
+    .header-social
+    {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        a:hover
+        {
+            color: $secondary-color;
+        }
+
+        i
+        {
+            font-size: 2rem;
+        }
+    }
+
+    nav
+    {
+        background-color: $light-gray-color;
+
+        .menu
+        {
+            width: min(90%, 1000px);
+            margin-inline: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            a
+            {
+                font-family: "Barlow", sans-serif;
+                font-weight: 500;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: .75rem 1rem;
+
+                &:hover
+                {
+                    opacity: .7;
+                    transition: all .3s;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,50 @@
+#schedule
+{
+    padding-block: 2rem 0;
+
+    h2
+    {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: $text-color;
+    }
+
+    .schedule-wrapper
+    {
+        padding: 1rem 1.5rem;
+        background: $light-gray-color;
+        border-radius: 10px;
+        width: min(90%, 1000px);
+        margin-inline: auto;
+        margin-bottom: -3rem;
+        position: relative;
+        z-index: 10;
+
+        span.off
+        {
+            text-decoration: line-through;
+            text-decoration-color: $terciary-color;
+            color: #777;
+        }
+
+        li
+        {
+            padding-block: .5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $text-color;
+
+            small
+            {
+                display: block;
+            }
+        }
+
+        li:not(:last-child)
+        {
+            border-bottom: 1px solid #BBB;
+        }
+    }
+}

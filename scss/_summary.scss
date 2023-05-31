@@ -1,0 +1,103 @@
+#course-summary
+{
+    margin-top: -2rem;
+
+    .summary-wrapper
+    {
+        display: flex;
+        width: min(90%, 800px);
+        margin-inline: auto;
+        padding-block: .75rem 1rem;
+        border-radius: 15px;
+
+        &.dark
+        {
+            background: $text-color;
+            color: #fff;
+
+            .card
+            {
+                font-weight: 200;
+                padding-inline: 1.5rem;
+
+                &:not(:last-child)::after
+                {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 60%;
+                    background: #fff;
+                }
+
+                span
+                {
+                    background: $secondary-color;
+                    margin-top: -2.5rem;
+                }
+            }
+        }
+
+        &.light
+        {
+            background: transparent;
+            color: $text-color;
+
+            .card
+            {
+                font-weight: 300;
+                padding-inline: 1.5rem;
+
+                &:not(:last-child)::after
+                {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 60%;
+                    background: $text-color;
+                }
+
+                span
+                {
+                    background: $text-color;
+
+                    i
+                    {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .card
+        {
+            flex: 1 0 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .75rem;
+            text-align: center;
+            font-size: .9rem;
+            position: relative;
+
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                width: 65px;
+                height: 65px;
+
+                i
+                {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
